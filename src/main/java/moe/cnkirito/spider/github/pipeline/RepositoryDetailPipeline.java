@@ -1,10 +1,9 @@
-package moe.cnkirito.spider.pipeline;
+package moe.cnkirito.spider.github.pipeline;
 
 import com.alibaba.fastjson.JSON;
 import com.geccocrawler.gecco.annotation.PipelineName;
 import com.geccocrawler.gecco.pipeline.Pipeline;
-import moe.cnkirito.spider.bean.MyGithub;
-import moe.cnkirito.spider.bean.RepositoryDetail;
+import moe.cnkirito.spider.github.bean.RepositoryDetail;
 
 /**
  * @author 徐靖峰[OF2938]

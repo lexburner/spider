@@ -1,6 +1,5 @@
-package moe.cnkirito.spider.bean;
+package moe.cnkirito.spider.github.bean;
 
-import com.geccocrawler.gecco.GeccoEngine;
 import com.geccocrawler.gecco.annotation.*;
 import com.geccocrawler.gecco.request.HttpRequest;
 import com.geccocrawler.gecco.spider.HtmlBean;

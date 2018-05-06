@@ -1,4 +1,4 @@
-package moe.cnkirito.spider.bean;
+package moe.cnkirito.spider.github.bean;
 
 import com.geccocrawler.gecco.annotation.Gecco;
 import com.geccocrawler.gecco.annotation.HtmlField;

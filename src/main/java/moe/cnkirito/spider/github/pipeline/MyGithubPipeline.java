@@ -1,12 +1,11 @@
-package moe.cnkirito.spider.pipeline;
+package moe.cnkirito.spider.github.pipeline;
 
 import com.alibaba.fastjson.JSON;
 import com.geccocrawler.gecco.annotation.PipelineName;
 import com.geccocrawler.gecco.pipeline.Pipeline;
 import com.geccocrawler.gecco.scheduler.DeriveSchedulerContext;
-import com.geccocrawler.gecco.scheduler.SchedulerContext;
-import moe.cnkirito.spider.bean.MyGithub;
-import moe.cnkirito.spider.common.DomainConstants;
+import moe.cnkirito.spider.github.bean.MyGithub;
+import moe.cnkirito.spider.github.common.DomainConstants;
 
 @PipelineName("myGithubPipeline")
 public class MyGithubPipeline implements Pipeline<MyGithub> {

@@ -1,4 +1,4 @@
-package moe.cnkirito.spider.common;
+package moe.cnkirito.spider.github.common;
 
 /**
  * @author 徐靖峰[OF2938]
