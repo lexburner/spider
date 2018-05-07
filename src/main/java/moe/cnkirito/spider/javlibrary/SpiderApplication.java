@@ -6,20 +6,15 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.util.Properties;
 
-//@SpringBootApplication
+@SpringBootApplication
 public class SpiderApplication {
 
     public static void main(String[] args) {
-//        SpringApplication.run(SpiderApplication.class, args);
-        String proxyHost = "127.0.0.1";
-        String proxyPort = "1080";
+        SpringApplication.run(SpiderApplication.class, args);
 
-        System.setProperty("http.proxyHost", proxyHost);
-        System.setProperty("http.proxyPort", proxyPort);
+        System.setProperty("socksProxyHost","127.0.0.1");
+        System.setProperty("socksProxyPort","1080");
 
-// 对https也开启代理
-        System.setProperty("https.proxyHost", proxyHost);
-        System.setProperty("https.proxyPort", proxyPort);
         GeccoEngine.create()
                 //工程的包路径
                 .classpath("moe.cnkirito.spider.javlibrary")

@@ -20,6 +20,6 @@ public class MovieListItem implements HtmlBean{
     private String id;
     @Attr("src")
     @HtmlField(cssPath = "div > a > img")
-    private String imgSrc;
+    private String img;
 
 }
