@@ -9,7 +9,7 @@ import moe.cnkirito.spider.github.bean.Repository;
 import java.util.List;
 
 @Data
-@Gecco(matchUrl="http://www.javlibrary.com/cn/vl_genre.php?g={category}&page={page}", pipelines={"movieListPagePipeline"})
+@Gecco(matchUrl="http://www.javlibrary.com/cn/vl_genre.php?g={category}", pipelines={"movieListPagePipeline"})
 public class MovieListPage implements HtmlBean {
 
     @Request

@@ -15,15 +15,24 @@ import java.net.URLConnection;
 public class SpiderApplicationTests {
 
 	public static void main(String[] args) throws IOException {
-		String proxyHost = "192.168.31.77";
-		String proxyPort = "1080";
+		String proxyHost = "127.0.0.1";
+		String proxyPort = "1087";
 
 		System.setProperty("http.proxyHost", proxyHost);
 		System.setProperty("http.proxyPort", proxyPort);
 
-// 对https也开启代理
+		// 对https也开启代理
 		System.setProperty("https.proxyHost", proxyHost);
 		System.setProperty("https.proxyPort", proxyPort);
+
+		URL url = new URL("http://sukebei.nyaa.si/");
+		URLConnection connection = url.openConnection();
+		connection.connect();
+		InputStream inputStream = connection.getInputStream();
+		byte[] bytes = new byte[1024];
+		while (inputStream.read(bytes) >= 0) {
+			System.out.println(new String(bytes));
+		}
 
 	}
 

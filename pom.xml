@@ -45,7 +45,11 @@
 			<artifactId>gecco</artifactId>
 			<version>${gecco.version}</version>
 		</dependency>
-
+        <dependency>
+            <groupId>com.geccocrawler</groupId>
+            <artifactId>gecco-spring</artifactId>
+            <version>${gecco.version}</version>
+        </dependency>
 
 		<dependency>
 			<groupId>org.projectlombok</groupId>
